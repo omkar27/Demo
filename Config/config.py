@@ -1,0 +1,8 @@
+#url = "http://automationpractice.com/index.php"
+url = "https://opensource-demo.orangehrmlive.com/"
+browser = "Chrome"
+username =  "Admin"
+password =  "admin123"
+small_wait = "2s"
+medium_wait = "5s"
+large_wait = "10s"

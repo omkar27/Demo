@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.0 on win32)" generated="20200512 18:01:38.654" rpa="false">
+<suite id="s1" name="Basic flow" source="C:\Users\usetr\PycharmProjects\DemoAutomation\TestCases\Basic_flow.robot">
+<test id="s1-t1" name="Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200512 18:01:40.060" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20200512 18:01:40.059" endtime="20200512 18:01:53.241"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200512 18:01:53.242" endtime="20200512 18:01:57.395"></status>
+</kw>
+<kw name="Enter Text In Text Box">
+<arguments>
+<arg>${username_input}</arg>
+<arg>${username}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${box}</arg>
+</arguments>
+<msg timestamp="20200512 18:01:57.399" level="INFO">Clicking element '//*[@id="txtUsername"]'.</msg>
+<status status="PASS" starttime="20200512 18:01:57.398" endtime="20200512 18:01:57.539"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${box}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200512 18:01:57.541" level="INFO">Typing text 'Admin' into text field '//*[@id="txtUsername"]'.</msg>
+<status status="PASS" starttime="20200512 18:01:57.540" endtime="20200512 18:01:57.649"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:01:57.396" endtime="20200512 18:01:57.649"></status>
+</kw>
+<kw name="Enter Text In Text Box">
+<arguments>
+<arg>${userpassword_input}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${box}</arg>
+</arguments>
+<msg timestamp="20200512 18:01:57.652" level="INFO">Clicking element '//*[@id="txtPassword"]'.</msg>
+<status status="PASS" starttime="20200512 18:01:57.652" endtime="20200512 18:01:57.769"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${box}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200512 18:01:57.770" level="INFO">Typing text 'admin123' into text field '//*[@id="txtPassword"]'.</msg>
+<status status="PASS" starttime="20200512 18:01:57.769" endtime="20200512 18:01:57.904"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:01:57.650" endtime="20200512 18:01:57.905"></status>
+</kw>
+<kw name="Click Button">
+<arguments>
+<arg>${login_button}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${button}</arg>
+</arguments>
+<msg timestamp="20200512 18:01:57.909" level="INFO">Clicking element '//*[@id="btnLogin"]'.</msg>
+<status status="PASS" starttime="20200512 18:01:57.908" endtime="20200512 18:02:03.937"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:01:57.907" endtime="20200512 18:02:03.938"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:01:40.058" endtime="20200512 18:02:03.948" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Create User">
+<kw name="Hover Element">
+<arguments>
+<arg>${hoveradmin}</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${hoverelement}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:03.985" level="INFO">Simulating Mouse Over on element '//*[@id="menu_admin_viewAdminModule"]/b'.</msg>
+<status status="PASS" starttime="20200512 18:02:03.985" endtime="20200512 18:02:04.083"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:03.984" endtime="20200512 18:02:04.084"></status>
+</kw>
+<kw name="Hover Element">
+<arguments>
+<arg>${hoveradmin}</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${hoverelement}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:04.088" level="INFO">Simulating Mouse Over on element '//*[@id="menu_admin_viewAdminModule"]/b'.</msg>
+<status status="PASS" starttime="20200512 18:02:04.086" endtime="20200512 18:02:04.130"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:04.085" endtime="20200512 18:02:04.130"></status>
+</kw>
+<kw name="Hover Element">
+<arguments>
+<arg>${hoverusermanagement}</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${hoverelement}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:04.133" level="INFO">Simulating Mouse Over on element '//*[@id="menu_admin_UserManagement"]'.</msg>
+<status status="PASS" starttime="20200512 18:02:04.133" endtime="20200512 18:02:04.200"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:04.131" endtime="20200512 18:02:04.200"></status>
+</kw>
+<kw name="Click Button">
+<arguments>
+<arg>${users}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${button}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:04.205" level="INFO">Clicking element '//*[@id="menu_admin_viewSystemUsers"]'.</msg>
+<status status="PASS" starttime="20200512 18:02:04.204" endtime="20200512 18:02:06.028"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:04.202" endtime="20200512 18:02:06.029"></status>
+</kw>
+<kw name="Click Button">
+<arguments>
+<arg>${adduser}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${button}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:06.033" level="INFO">Clicking element '//*[@id="btnAdd"]'.</msg>
+<status status="PASS" starttime="20200512 18:02:06.032" endtime="20200512 18:02:07.427"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:06.030" endtime="20200512 18:02:07.427"></status>
+</kw>
+<kw name="Click Button">
+<arguments>
+<arg>//*[@id="systemUser_userType"]</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${button}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:07.429" level="INFO">Clicking element '//*[@id="systemUser_userType"]'.</msg>
+<status status="PASS" starttime="20200512 18:02:07.429" endtime="20200512 18:02:07.582"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:07.428" endtime="20200512 18:02:07.582"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${small_wait}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:09.584" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200512 18:02:07.583" endtime="20200512 18:02:09.584"></status>
+</kw>
+<kw name="Select From Drop Down">
+<arguments>
+<arg>${user_drop_down}</arg>
+<arg>${user_index}</arg>
+</arguments>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${Dropdown}</arg>
+<arg>${val}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:09.589" level="INFO">Selecting options from selection list '//*[@id="systemUser_userType"]' by value 1.</msg>
+<status status="PASS" starttime="20200512 18:02:09.588" endtime="20200512 18:02:09.752"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:09.586" endtime="20200512 18:02:09.753"></status>
+</kw>
+<kw name="Enter Text In Text Box">
+<arguments>
+<arg>${employeename_input}</arg>
+<arg>${add_user_name}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${box}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:09.757" level="INFO">Clicking element '//*[@id="systemUser_employeeName_empName"]'.</msg>
+<status status="PASS" starttime="20200512 18:02:09.756" endtime="20200512 18:02:09.885"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${box}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:09.886" level="INFO">Typing text 'John Smi' into text field '//*[@id="systemUser_employeeName_empName"]'.</msg>
+<status status="PASS" starttime="20200512 18:02:09.885" endtime="20200512 18:02:10.399"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:09.754" endtime="20200512 18:02:10.399"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${small_wait}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:12.401" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200512 18:02:10.401" endtime="20200512 18:02:12.401"></status>
+</kw>
+<kw name="Click Button">
+<arguments>
+<arg>${select_from_search_result}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${button}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:12.409" level="INFO">Clicking element '//div[@class="ac_results"]'.</msg>
+<status status="PASS" starttime="20200512 18:02:12.407" endtime="20200512 18:02:12.508"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:12.403" endtime="20200512 18:02:12.509"></status>
+</kw>
+<kw name="Enter Text In Text Box">
+<arguments>
+<arg>${add_user_name_input}</arg>
+<arg>${new_user_name}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${box}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:12.523" level="INFO">Clicking element '//*[@id="systemUser_userName"]'.</msg>
+<status status="PASS" starttime="20200512 18:02:12.523" endtime="20200512 18:02:12.625"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${box}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:12.628" level="INFO">Typing text 'Johnson1589286700.0535758' into text field '//*[@id="systemUser_userName"]'.</msg>
+<status status="PASS" starttime="20200512 18:02:12.626" endtime="20200512 18:02:12.901"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:12.521" endtime="20200512 18:02:12.902"></status>
+</kw>
+<kw name="Select From Drop Down">
+<arguments>
+<arg>${status_dropdown}</arg>
+<arg>${status_drop}</arg>
+</arguments>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${Dropdown}</arg>
+<arg>${val}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:12.904" level="INFO">Selecting options from selection list '//*[@id="systemUser_status"]' by value 1.</msg>
+<status status="PASS" starttime="20200512 18:02:12.904" endtime="20200512 18:02:12.986"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:12.903" endtime="20200512 18:02:12.987"></status>
+</kw>
+<kw name="Enter Text In Text Box">
+<arguments>
+<arg>${add_user_passwword_input}</arg>
+<arg>${new_password}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${box}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:12.989" level="INFO">Clicking element '//*[@id="systemUser_password"]'.</msg>
+<status status="PASS" starttime="20200512 18:02:12.988" endtime="20200512 18:02:13.087"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${box}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:13.089" level="INFO">Typing text 'Admin@123!@#$%fdsf1589286700.0535758' into text field '//*[@id="systemUser_password"]'.</msg>
+<status status="PASS" starttime="20200512 18:02:13.088" endtime="20200512 18:02:13.561"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:12.987" endtime="20200512 18:02:13.561"></status>
+</kw>
+<kw name="Enter Text In Text Box">
+<arguments>
+<arg>${add_user_confirm_passwword_input}</arg>
+<arg>${confirm_new_password}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${box}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:13.563" level="INFO">Clicking element '//*[@id="systemUser_confirmPassword"]'.</msg>
+<status status="PASS" starttime="20200512 18:02:13.563" endtime="20200512 18:02:13.668"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${box}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:13.669" level="INFO">Typing text 'Admin@123!@#$%fdsf1589286700.0535758' into text field '//*[@id="systemUser_confirmPassword"]'.</msg>
+<status status="PASS" starttime="20200512 18:02:13.668" endtime="20200512 18:02:14.013"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:13.562" endtime="20200512 18:02:14.014"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${small_wait}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:16.016" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200512 18:02:14.015" endtime="20200512 18:02:16.016"></status>
+</kw>
+<kw name="Click Button">
+<arguments>
+<arg>${add_user_save_btn}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${button}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:16.018" level="INFO">Clicking element '//*[@id="btnSave"]'.</msg>
+<status status="PASS" starttime="20200512 18:02:16.018" endtime="20200512 18:02:16.157"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:16.017" endtime="20200512 18:02:16.157"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:03.983" endtime="20200512 18:02:16.159" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Verify Create User">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${large_wait}</arg>
+</arguments>
+<msg timestamp="20200512 18:02:26.165" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200512 18:02:16.163" endtime="20200512 18:02:26.165"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="resultTable"]/tbody/tr/td[2]/a[contains(text(),'${new_user_name}')]</arg>
+</arguments>
+<msg timestamp="20200512 18:02:26.193" level="INFO">Current page contains element '//*[@id="resultTable"]/tbody/tr/td[2]/a[contains(text(),'Johnson1589286700.0535758')]'.</msg>
+<status status="PASS" starttime="20200512 18:02:26.166" endtime="20200512 18:02:26.194"></status>
+</kw>
+<status status="PASS" starttime="20200512 18:02:16.161" endtime="20200512 18:02:26.195" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200512 18:01:38.665" endtime="20200512 18:02:26.199"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="Basic flow">Basic flow</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
